@@ -18,7 +18,7 @@ async function run() {
         // Connect the client to the server (optional starting in v4.7)
         await client.connect();
         // Establish and verify connection
-        await client.db("admin").command({ ping: 1 });
+        await client.db("base_datos").command({ ping: 1 });
         console.log("Connected successfully to server");
     } catch (error) {
         // Ensures that the client will close when you finish/error
